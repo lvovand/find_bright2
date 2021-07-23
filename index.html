@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Обработка видео</title>
     <style>
-    	.i_colors{
+    	video{
 			display: none;    	
     	}
-    	video,canvas{
+    	canvas{
 			box-shadow: 0 0 10px rgba(0,0,0,0.5);    	
     	}
     </style>
@@ -22,9 +22,8 @@
 <div class="container">
     <h3>Обработка видео</h3>    
 <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" >    
     <video id="video" width="320" height="240" autoplay></video>
-  </div>
+
   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" >
     <canvas id="canvas" width="320" height="240"></canvas>
     <!--
@@ -34,7 +33,7 @@
       <div id="numSquares" class="form-text">Если отмечено, то показать все области, иначе показать одну </div>
     </div>
     -->
-
+	<br>	
     <button type="button" class="btn btn-primary" id="getcolors">Начать</button>
     <button type="button" class="btn btn-primary" id="stopcolors" disabled="disabled">Остановить</button>
   </div>

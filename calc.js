@@ -82,7 +82,7 @@ function calculate(data_calc){
 	}
 	//console.log(current_x,current_y,minY);
 	var left = (current_x > min_width)? current_x-min_width/2 : current_x;
-	var up = (current_y > min_height)? current_y-min_width/2 : current_y; 
+	var up = current_y; 
 	var right = left + min_width;
 	var down = up + min_height; 
 	//squares.push({left: left, up: up,right: right,down: down});	
